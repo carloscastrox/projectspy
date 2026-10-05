@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Proyectos GitHub</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logosena.png" type="image/x-icon">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body id="inicio">
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm border-bottom border-secondary bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="bi bi-code-slash text-primary me-2"></i>Python+Django+FastAPI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero (Presentación) -->
+    <!-- pt-5 y mt-5 evitan que el navbar fijo tape el contenido -->
+    <header class="bg-dark bg-gradient border-bottom border-secondary pt-5 mt-5 pb-5 text-center text-md-start">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">Carlos Andrés Castro Jaramillo</h1>
+                    <h2 class="h4 text-secondary mb-4">Ingeniero de Sistemas e Instructor de Desarrollo de Software</h2>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#proyectos" class="btn btn-primary btn-lg px-4 rounded-pill">Ver Proyectos</a>
+                        <a href="https://github.com/carloscastrox/" target="_blank"
+                            class="btn btn-outline-light btn-lg px-4 rounded-pill">
+                            <i class="bi bi-github me-2"></i>GitHub Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Proyectos (Centralizador de GitHub) -->
+    <section id="proyectos" class="py-5 bg-body">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Repositorios Destacados</h2>
+                <div class="mx-auto bg-primary mt-2" style="height: 3px; width: 60px;"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Proyecto 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-bg-dark border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="bi bi-journal-code fs-1 text-primary"></i>
+                                <a href="https://github.com/juan16378/TALLER4"
+                                    class="link-light link-opacity-50 link-opacity-100-hover fs-4"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
+                            <h5 class="card-title fw-bold">Sistema de Login Biométrico — Django + FastAPI</h5>
+                            <p class="card-text text-secondary flex-grow-1">Proyecto compuesto por dos aplicaciones
+                                independientes que se comunican por HTTP:
+
+                                backend/ — API en FastAPI que expone autenticación por JWT y reconocimiento facial
+                                (detección con Haar Cascade + reconocimiento con LBPH, ambos de OpenCV). Documentación
+                                interactiva automática en /docs (Swagger).
+                                frontend/ — Sitio Django con vistas, plantillas HTML5 y JavaScript que captura video de
+                                la cámara del usuario (getUserMedia), lo envía al backend y muestra el resultado.
+                            </p>
+                            <div class="mt-auto">
+                                <span class="badge text-bg-secondary me-1 mb-1">Django</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">FastAPI</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">OpenCV</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 pb-3 px-3">
+                            <a href="https://github.com/juan16378/TALLER4"
+                                class="btn btn-sm btn-outline-primary w-100">Ver Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-bg-dark border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="bi bi-journal-code fs-1 text-primary"></i>
+                                <a href="https://github.com/andersonflorez724-commits/escaneo_de_documentos"
+                                    class="link-light link-opacity-50 link-opacity-100-hover fs-4"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
+                            <h5 class="card-title fw-bold">Lector e Inspector de Documentos de Identificación</h5>
+                            <p class="card-text text-secondary flex-grow-1">Aplicación web que lee e inspecciona
+                                documentos de identidad (cédula de ciudadanía y tarjeta de identidad) con OCR, para
+                                evitar la digitación manual en recepción.</p>
+                            <div class="mt-auto">
+                                <span class="badge text-bg-secondary me-1 mb-1">Django</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">FastAPI</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">RapidOCR</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 pb-3 px-3">
+                            <a href="https://github.com/andersonflorez724-commits/escaneo_de_documentos"
+                                class="btn btn-sm btn-outline-primary w-100">Ver Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-bg-dark border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="bi bi-journal-code fs-1 text-primary"></i>
+                                <a href="https://github.com/Memcy-10/Detector-de-somnolencia-en-conductores"
+                                    class="link-light link-opacity-50 link-opacity-100-hover fs-4"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
+                            <h5 class="card-title fw-bold">Sistema de Detección de Somnolencia para Conductores</h5>
+                            <p class="card-text text-secondary flex-grow-1">Este proyecto implementa un sistema de
+                                detección de somnolencia en tiempo real para conductores, utilizando el modelo
+                                pre-entrenado de MediaPipe Face Mesh a través de la cámara web.</p>
+                            <div class="mt-auto">
+                                <span class="badge text-bg-secondary me-1 mb-1">Python</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">FastAPI</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">Mediapipe</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 pb-3 px-3">
+                            <a href="https://github.com/Memcy-10/Detector-de-somnolencia-en-conductores"
+                                class="btn btn-sm btn-outline-primary w-100">Ver Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-bg-dark border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="bi bi-journal-code fs-1 text-primary"></i>
+                                <a href="https://github.com/angelots31/validador-"
+                                    class="link-light link-opacity-50 link-opacity-100-hover fs-4"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
+                            <h5 class="card-title fw-bold">Validador de Calidad de Frutas y Verduras</h5>
+                            <p class="card-text text-secondary flex-grow-1">Aplicación de visión por computador que
+                                permite capturar la foto de una fruta o verdura desde la cámara del navegador y obtener
+                                automáticamente su tipo, su calidad y su estado de madurez, con la explicación de cómo
+                                se llegó a ese resultado.</p>
+                            <div class="mt-auto">
+                                <span class="badge text-bg-secondary me-1 mb-1">Python</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">FastAPI</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">ResNet18</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 pb-3 px-3">
+                            <a href="https://github.com/angelots31/validador-"
+                                class="btn btn-sm btn-outline-primary w-100">Ver Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-bg-dark border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="bi bi-journal-code fs-1 text-primary"></i>
+                                <a href="https://github.com/LuisOrCo/Posture-Notre-Dame"
+                                    class="link-light link-opacity-50 link-opacity-100-hover fs-4"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
+                            <h5 class="card-title fw-bold">Posture Notre Dame — Sistema de Salud y Monitoreo Ergonómico
+                            </h5>
+                            <p class="card-text text-secondary flex-grow-1">Plataforma inteligente de evaluación
+                                biomecánica y corrección postural en tiempo real para la prevención de trastornos
+                                musculoesqueléticos en jornadas laborales y teletrabajo, desarrollada con Django,
+                                FastAPI, MediaPipe Pose Estimation y MongoDB.</p>
+                            <div class="mt-auto">
+                                <span class="badge text-bg-secondary me-1 mb-1">Python</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">FastAPI</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">MediaPipe Pose Estimation</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 pb-3 px-3">
+                            <a href="https://github.com/LuisOrCo/Posture-Notre-Dame"
+                                class="btn btn-sm btn-outline-primary w-100">Ver Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-bg-dark border-secondary shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <i class="bi bi-journal-code fs-1 text-primary"></i>
+                                <a href="https://github.com/arenasgomez209-alt/Traductor-De-Se-as-A-Texto"
+                                    class="link-light link-opacity-50 link-opacity-100-hover fs-4"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
+                            <h5 class="card-title fw-bold">Traductor de Lengua de Señas a Texto para Atención al Cliente
+                            </h5>
+                            <p class="card-text text-secondary flex-grow-1">Barreras de comunicación en ventanillas de atención presencial para personas con discapacidad auditiva, permitiendo que el personal asesor reciba en texto legible de lo que el usuario comunica mediante lengua de señas en tiempo real.</p>
+                            <div class="mt-auto">
+                                <span class="badge text-bg-secondary me-1 mb-1">Python</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">FastAPI</span>
+                                <span class="badge text-bg-secondary me-1 mb-1">MediaPipe Hands</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 pb-3 px-3">
+                            <a href="https://github.com/arenasgomez209-alt/Traductor-De-Se-as-A-Texto"
+                                class="btn btn-sm btn-outline-primary w-100">Ver Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="py-5 bg-dark border-top border-secondary text-center">
+        <div class="container">
+            <h4 class="mb-4">¿Hablamos de código?</h4>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <!-- Usando clases link-opacity para efectos de hover nativos -->
+                <a href="#" class="link-light link-opacity-50 link-opacity-100-hover fs-3"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="#" class="link-light link-opacity-50 link-opacity-100-hover fs-3"><i
+                        class="bi bi-github"></i></a>
+                <a href="#" class="link-light link-opacity-50 link-opacity-100-hover fs-3"><i
+                        class="bi bi-envelope-at"></i></a>
+            </div>
+            <p class="text-secondary small mb-0">&copy; 2026 Carlos Andrés Castro Jaramillo. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
