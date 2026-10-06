@@ -36,23 +36,39 @@
 
     <!-- Sección Hero (Presentación) -->
     <!-- pt-5 y mt-5 evitan que el navbar fijo tape el contenido -->
-    <header class="bg-dark bg-gradient border-bottom border-secondary pt-5 mt-5 pb-5 text-center text-md-start">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-md-8 mx-auto text-center">
-                    <h1 class="display-4 fw-bold mb-3">Carlos Andrés Castro Jaramillo</h1>
-                    <h2 class="h4 text-secondary mb-4">Ingeniero de Sistemas e Instructor de Desarrollo de Software</h2>
-                    <div class="d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="#proyectos" class="btn btn-primary btn-lg px-4 rounded-pill">Ver Proyectos</a>
-                        <a href="https://github.com/carloscastrox/" target="_blank"
-                            class="btn btn-outline-light btn-lg px-4 rounded-pill">
-                            <i class="bi bi-github me-2"></i>GitHub Profile
-                        </a>
-                    </div>
+<header class="bg-dark bg-gradient border-bottom border-secondary pt-5 mt-5 pb-5">
+    <div class="container py-5">
+        <div class="row align-items-center justify-content-between">
+            
+            <!-- Columna de Texto y Nombres -->
+            <div class="col-lg-8 text-center text-lg-start mb-5 mb-lg-0">
+                <h1 class="display-5 fw-bold mb-3">Rubiela Isabel Beleño Ramos</h1>
+                <h1 class="display-5 fw-bold mb-3">Carlos Andrés Castro Jaramillo</h1>             
+                
+                <h2 class="h4 text-secondary mb-4">Python y Machine Learning</h2>
+                
+                <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
+                    <a href="#proyectos" class="btn btn-primary btn-lg px-4 rounded-pill">Ver Proyectos</a>
                 </div>
             </div>
+
+            <!-- Columna del Código QR -->
+            <div class="col-lg-4 text-center">
+                <!-- Contenedor blanco para asegurar que el QR sea legible -->
+                <div class="bg-white p-1 rounded-4 d-inline-block shadow-lg">
+                    <img src="assets/qr.png" 
+                         alt="Código QR del Portafolio" 
+                         class="img-fluid rounded" 
+                         width="240" height="240">
+                </div>
+                <p class="text-secondary small mt-3 mb-0">
+                    <i class="bi bi-phone-vibrate me-1"></i> Escanea para abrir el proyecto detección de rostro
+                </p>
+            </div>
+
         </div>
-    </header>
+    </div>
+</header>
 
     <!-- Sección de Proyectos (Centralizador de GitHub) -->
     <section id="proyectos" class="py-5 bg-body">
